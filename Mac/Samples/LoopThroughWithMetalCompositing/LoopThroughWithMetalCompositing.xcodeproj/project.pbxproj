@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16A8ADC32D517A840012F32E /* InputConversions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16A8ADC22D517A840012F32E /* InputConversions.metal */; };
+		16A8ADC52D517D170012F32E /* OutputConversions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16A8ADC42D517D170012F32E /* OutputConversions.metal */; };
+		16E207EE2CFFE26400247372 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E207EA2CFFE26400247372 /* SceneKit.framework */; };
+		16E207EF2CFFE26400247372 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E207EB2CFFE26400247372 /* Metal.framework */; };
+		16E207F02CFFE26400247372 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E207EC2CFFE26400247372 /* MetalKit.framework */; };
+		16E207F12CFFE26400247372 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E207ED2CFFE26400247372 /* CoreVideo.framework */; };
+		16E207F22CFFE29200247372 /* LoopThroughWithCompositing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E207DA2CFFE1EA00247372 /* LoopThroughWithCompositing.cpp */; };
+		16E207F32CFFE29200247372 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E207DC2CFFE1EA00247372 /* main.cpp */; };
+		16E207F42CFFE29200247372 /* DeckLinkCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E207DF2CFFE20100247372 /* DeckLinkCapture.cpp */; };
+		16E207F52CFFE29200247372 /* DeckLinkPlayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E207E12CFFE20100247372 /* DeckLinkPlayout.cpp */; };
+		16E207F62CFFE29200247372 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E207D82CFFE08200247372 /* DeckLinkAPIDispatch.cpp */; };
+		16E207F72CFFE29200247372 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E207E32CFFE22000247372 /* Cube.cpp */; };
+		16E207F82CFFE29200247372 /* MetalCubeRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16E207E62CFFE22000247372 /* MetalCubeRenderer.mm */; };
+		16E207F92CFFE2C000247372 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 16E207E72CFFE22000247372 /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16E207C72CFFE02200247372 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16A8ADC22D517A840012F32E /* InputConversions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = InputConversions.metal; sourceTree = "<group>"; };
+		16A8ADC42D517D170012F32E /* OutputConversions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = OutputConversions.metal; sourceTree = "<group>"; };
+		16E207C92CFFE02200247372 /* LoopThroughWithMetalCompositing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LoopThroughWithMetalCompositing; sourceTree = BUILT_PRODUCTS_DIR; };
+		16E207D72CFFE08200247372 /* DeckLinkAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeckLinkAPI.h; path = ../../include/DeckLinkAPI.h; sourceTree = SOURCE_ROOT; };
+		16E207D82CFFE08200247372 /* DeckLinkAPIDispatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkAPIDispatch.cpp; path = ../../include/DeckLinkAPIDispatch.cpp; sourceTree = SOURCE_ROOT; };
+		16E207D92CFFE1EA00247372 /* LoopThroughWithCompositing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopThroughWithCompositing.h; sourceTree = "<group>"; };
+		16E207DA2CFFE1EA00247372 /* LoopThroughWithCompositing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoopThroughWithCompositing.cpp; sourceTree = "<group>"; };
+		16E207DC2CFFE1EA00247372 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		16E207DD2CFFE20100247372 /* com_ptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_ptr.h; sourceTree = "<group>"; };
+		16E207DE2CFFE20100247372 /* DeckLinkCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeckLinkCapture.h; sourceTree = "<group>"; };
+		16E207DF2CFFE20100247372 /* DeckLinkCapture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeckLinkCapture.cpp; sourceTree = "<group>"; };
+		16E207E02CFFE20100247372 /* DeckLinkPlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeckLinkPlayout.h; sourceTree = "<group>"; };
+		16E207E12CFFE20100247372 /* DeckLinkPlayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeckLinkPlayout.cpp; sourceTree = "<group>"; };
+		16E207E22CFFE22000247372 /* Cube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		16E207E32CFFE22000247372 /* Cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
+		16E207E42CFFE22000247372 /* CubeRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeRenderer.h; sourceTree = "<group>"; };
+		16E207E52CFFE22000247372 /* MetalCubeRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalCubeRenderer.h; sourceTree = "<group>"; };
+		16E207E62CFFE22000247372 /* MetalCubeRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalCubeRenderer.mm; sourceTree = "<group>"; };
+		16E207E72CFFE22000247372 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		16E207E82CFFE22000247372 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		16E207EA2CFFE26400247372 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		16E207EB2CFFE26400247372 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		16E207EC2CFFE26400247372 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		16E207ED2CFFE26400247372 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16E207C62CFFE02200247372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E207F02CFFE26400247372 /* MetalKit.framework in Frameworks */,
+				16E207EF2CFFE26400247372 /* Metal.framework in Frameworks */,
+				16E207EE2CFFE26400247372 /* SceneKit.framework in Frameworks */,
+				16E207F12CFFE26400247372 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16E207C02CFFE02200247372 = {
+			isa = PBXGroup;
+			children = (
+				16E207D32CFFE02E00247372 /* Application */,
+				16E207D42CFFE03700247372 /* DeckLink */,
+				16E207D52CFFE04400247372 /* DeckLinkAPI */,
+				16E207D62CFFE04D00247372 /* Renderer */,
+				16E207E92CFFE26400247372 /* Frameworks */,
+				16E207CA2CFFE02200247372 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16E207CA2CFFE02200247372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16E207C92CFFE02200247372 /* LoopThroughWithMetalCompositing */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16E207D32CFFE02E00247372 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				16E207D92CFFE1EA00247372 /* LoopThroughWithCompositing.h */,
+				16E207DA2CFFE1EA00247372 /* LoopThroughWithCompositing.cpp */,
+				16E207DC2CFFE1EA00247372 /* main.cpp */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		16E207D42CFFE03700247372 /* DeckLink */ = {
+			isa = PBXGroup;
+			children = (
+				16E207DD2CFFE20100247372 /* com_ptr.h */,
+				16E207DE2CFFE20100247372 /* DeckLinkCapture.h */,
+				16E207DF2CFFE20100247372 /* DeckLinkCapture.cpp */,
+				16E207E02CFFE20100247372 /* DeckLinkPlayout.h */,
+				16E207E12CFFE20100247372 /* DeckLinkPlayout.cpp */,
+			);
+			name = DeckLink;
+			sourceTree = "<group>";
+		};
+		16E207D52CFFE04400247372 /* DeckLinkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				16E207D72CFFE08200247372 /* DeckLinkAPI.h */,
+				16E207D82CFFE08200247372 /* DeckLinkAPIDispatch.cpp */,
+			);
+			name = DeckLinkAPI;
+			sourceTree = "<group>";
+		};
+		16E207D62CFFE04D00247372 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				16E207E22CFFE22000247372 /* Cube.h */,
+				16E207E32CFFE22000247372 /* Cube.cpp */,
+				16E207E42CFFE22000247372 /* CubeRenderer.h */,
+				16A8ADC22D517A840012F32E /* InputConversions.metal */,
+				16E207E52CFFE22000247372 /* MetalCubeRenderer.h */,
+				16E207E62CFFE22000247372 /* MetalCubeRenderer.mm */,
+				16A8ADC42D517D170012F32E /* OutputConversions.metal */,
+				16E207E72CFFE22000247372 /* Shaders.metal */,
+				16E207E82CFFE22000247372 /* ShaderTypes.h */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		16E207E92CFFE26400247372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16E207ED2CFFE26400247372 /* CoreVideo.framework */,
+				16E207EB2CFFE26400247372 /* Metal.framework */,
+				16E207EC2CFFE26400247372 /* MetalKit.framework */,
+				16E207EA2CFFE26400247372 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16E207C82CFFE02200247372 /* LoopThroughWithMetalCompositing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16E207D02CFFE02200247372 /* Build configuration list for PBXNativeTarget "LoopThroughWithMetalCompositing" */;
+			buildPhases = (
+				16E207C52CFFE02200247372 /* Sources */,
+				16E207C62CFFE02200247372 /* Frameworks */,
+				16E207C72CFFE02200247372 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoopThroughWithMetalCompositing;
+			packageProductDependencies = (
+			);
+			productName = LoopThroughWithMetalCompositing;
+			productReference = 16E207C92CFFE02200247372 /* LoopThroughWithMetalCompositing */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16E207C12CFFE02200247372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					16E207C82CFFE02200247372 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 16E207C42CFFE02200247372 /* Build configuration list for PBXProject "LoopThroughWithMetalCompositing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16E207C02CFFE02200247372;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = 16E207CA2CFFE02200247372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16E207C82CFFE02200247372 /* LoopThroughWithMetalCompositing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16E207C52CFFE02200247372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A8ADC52D517D170012F32E /* OutputConversions.metal in Sources */,
+				16E207F92CFFE2C000247372 /* Shaders.metal in Sources */,
+				16E207F22CFFE29200247372 /* LoopThroughWithCompositing.cpp in Sources */,
+				16A8ADC32D517A840012F32E /* InputConversions.metal in Sources */,
+				16E207F32CFFE29200247372 /* main.cpp in Sources */,
+				16E207F42CFFE29200247372 /* DeckLinkCapture.cpp in Sources */,
+				16E207F52CFFE29200247372 /* DeckLinkPlayout.cpp in Sources */,
+				16E207F62CFFE29200247372 /* DeckLinkAPIDispatch.cpp in Sources */,
+				16E207F72CFFE29200247372 /* Cube.cpp in Sources */,
+				16E207F82CFFE29200247372 /* MetalCubeRenderer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		16E207CE2CFFE02200247372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		16E207CF2CFFE02200247372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		16E207D12CFFE02200247372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16E207D22CFFE02200247372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16E207C42CFFE02200247372 /* Build configuration list for PBXProject "LoopThroughWithMetalCompositing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E207CE2CFFE02200247372 /* Debug */,
+				16E207CF2CFFE02200247372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16E207D02CFFE02200247372 /* Build configuration list for PBXNativeTarget "LoopThroughWithMetalCompositing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E207D12CFFE02200247372 /* Debug */,
+				16E207D22CFFE02200247372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16E207C12CFFE02200247372 /* Project object */;
+}

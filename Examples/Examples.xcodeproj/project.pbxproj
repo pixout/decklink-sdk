@@ -1,0 +1,1010 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085EF2D41818946000D5805C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		085EF2D81818956B00D5805C /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		085EF2DA181899BB00D5805C /* AutomaticModeDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D9181899BB00D5805C /* AutomaticModeDetection.cpp */; };
+		08A481121850640E00C11683 /* DeviceNotification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08A4F41D185028F500462953 /* DeviceNotification.cpp */; };
+		08A4811318506BB800C11683 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		08A4811518517D2700C11683 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		08A4811618517D4100C11683 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		08AFDC0A181E06F700C86C10 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		16FE1C75227AAF3F00282213 /* VancCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16FE1C68227AAE9000282213 /* VancCapture.cpp */; };
+		16FE1C76227AAF4900282213 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		16FE1C77227AAF5400282213 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		16FE1C78227AAF6100282213 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		A82F1FFA19AC706B006B6B3D /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		A82F1FFB19AC706B006B6B3D /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		A82F1FFD19AC706B006B6B3D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		A82F200319AC70AB006B6B3D /* RP188VitcOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A82F200219AC70AB006B6B3D /* RP188VitcOutput.cpp */; };
+		A837E7BC2186BA3200C083AF /* SynchronizedCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A837E7BB2186BA3200C083AF /* SynchronizedCapture.cpp */; };
+		A837E7BD2186CD3400C083AF /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		A837E7BE2186CD3900C083AF /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		A837E7BF2186CD5400C083AF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		A8385BCA21630318005E0A98 /* SynchronizedPlayback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A882B31D2154AFA40058E063 /* SynchronizedPlayback.cpp */; };
+		A8385BCB21630354005E0A98 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		A8385BCC2163035A005E0A98 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		A8385BCD21630380005E0A98 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		A8F503DF1C0D119500212771 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		A8F503E01C0D119500212771 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		A8F503E21C0D119500212771 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		A8F503E81C0D11C200212771 /* StatusMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8F503E71C0D11C200212771 /* StatusMonitor.cpp */; };
+		A8F503EA1C0D138000212771 /* VancOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEAE2E541959557C00DE9F48 /* VancOutput.cpp */; };
+		DE5A4784195BA1FC00BA86C6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		DE75DF80195CFE0E0016F2B3 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		DE75DF81195CFE0E0016F2B3 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		E3B3225D2BC7CA500040C6AD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085EF2D31818946000D5805C /* CoreFoundation.framework */; };
+		E3B3225F2BC7CE990040C6AD /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08AFDC09181E06F700C86C10 /* platform.cpp */; };
+		E3B322602BC7CEA00040C6AD /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */; };
+		E3C420C92BC8C7AA00885A09 /* DeckLinkIPExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3C420C82BC8C7AA00885A09 /* DeckLinkIPExample.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16FE1C6C227AAF0200282213 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A837E7B22186B9DF00C083AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A882B3212154AFBD0058E063 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E3B322542BC7CA350040C6AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		085EF2C91818942B00D5805C /* AutomaticModeDetection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AutomaticModeDetection; sourceTree = BUILT_PRODUCTS_DIR; };
+		085EF2D31818946000D5805C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		085EF2D6181894CD00D5805C /* DeckLinkAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeckLinkAPI.h; path = ../Mac/include/DeckLinkAPI.h; sourceTree = "<group>"; };
+		085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DeckLinkAPIDispatch.cpp; path = ../Mac/include/DeckLinkAPIDispatch.cpp; sourceTree = "<group>"; };
+		085EF2D9181899BB00D5805C /* AutomaticModeDetection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutomaticModeDetection.cpp; sourceTree = "<group>"; };
+		08A48109185059A400C11683 /* DeviceNotification */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeviceNotification; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A4F41D185028F500462953 /* DeviceNotification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceNotification.cpp; sourceTree = SOURCE_ROOT; };
+		08AFDC08181E019600C86C10 /* platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		08AFDC09181E06F700C86C10 /* platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = platform.cpp; path = Mac/platform.cpp; sourceTree = "<group>"; };
+		16FE1C68227AAE9000282213 /* VancCapture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VancCapture.cpp; sourceTree = "<group>"; };
+		16FE1C6E227AAF0200282213 /* VancCapture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VancCapture; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82F200119AC706B006B6B3D /* RP188VitcOutput */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RP188VitcOutput; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82F200219AC70AB006B6B3D /* RP188VitcOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RP188VitcOutput.cpp; sourceTree = SOURCE_ROOT; };
+		A837E7B42186B9DF00C083AF /* SynchronizedCapture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SynchronizedCapture; sourceTree = BUILT_PRODUCTS_DIR; };
+		A837E7BB2186BA3200C083AF /* SynchronizedCapture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SynchronizedCapture.cpp; sourceTree = SOURCE_ROOT; };
+		A882B31D2154AFA40058E063 /* SynchronizedPlayback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SynchronizedPlayback.cpp; sourceTree = SOURCE_ROOT; };
+		A882B3232154AFBD0058E063 /* SynchronizedPlayback */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SynchronizedPlayback; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F503E61C0D119500212771 /* StatusMonitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StatusMonitor; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F503E71C0D11C200212771 /* StatusMonitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatusMonitor.cpp; sourceTree = "<group>"; };
+		DEAE2E481958EC2700DE9F48 /* VancOutput */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VancOutput; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAE2E541959557C00DE9F48 /* VancOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VancOutput.cpp; sourceTree = SOURCE_ROOT; };
+		E3B322562BC7CA350040C6AD /* DeckLinkIPExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeckLinkIPExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C420C82BC8C7AA00885A09 /* DeckLinkIPExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeckLinkIPExample.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085EF2C61818942B00D5805C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085EF2D41818946000D5805C /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A48106185059A400C11683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A4811618517D4100C11683 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FE1C6B227AAF0200282213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FE1C78227AAF6100282213 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A82F1FFC19AC706B006B6B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A82F1FFD19AC706B006B6B3D /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A837E7B12186B9DF00C083AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A837E7BF2186CD5400C083AF /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A882B3202154AFBD0058E063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8385BCD21630380005E0A98 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F503E11C0D119500212771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F503E21C0D119500212771 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAE2E451958EC2700DE9F48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5A4784195BA1FC00BA86C6 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B322532BC7CA350040C6AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B3225D2BC7CA500040C6AD /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083BE8A1181892BD0067DA94 = {
+			isa = PBXGroup;
+			children = (
+				E3B322512BC7C9D40040C6AD /* DeckLinkIPExample */,
+				16FE1C67227AAE7C00282213 /* VancCapture */,
+				A8F503E91C0D11C900212771 /* StatusMonitor */,
+				08A4810A185059A400C11683 /* DeviceNotification */,
+				DEAE2E491958EC2700DE9F48 /* VancOutput */,
+				A82F1FEF19AC704D006B6B3D /* RP188VitcOutput */,
+				A882B3242154AFBD0058E063 /* SynchronizedPlayback */,
+				A837E7B52186B9DF00C083AF /* SynchronizedCapture */,
+				DEB1D2BA1958038E00A19F86 /* Frameworks */,
+				083BE8AB181892BD0067DA94 /* Products */,
+				085EF2C41818940A00D5805C /* Common */,
+				085EF2C0181892FF00D5805C /* AutomaticModeDetection */,
+			);
+			sourceTree = "<group>";
+		};
+		083BE8AB181892BD0067DA94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085EF2C91818942B00D5805C /* AutomaticModeDetection */,
+				08A48109185059A400C11683 /* DeviceNotification */,
+				DEAE2E481958EC2700DE9F48 /* VancOutput */,
+				A82F200119AC706B006B6B3D /* RP188VitcOutput */,
+				A8F503E61C0D119500212771 /* StatusMonitor */,
+				A882B3232154AFBD0058E063 /* SynchronizedPlayback */,
+				A837E7B42186B9DF00C083AF /* SynchronizedCapture */,
+				16FE1C6E227AAF0200282213 /* VancCapture */,
+				E3B322562BC7CA350040C6AD /* DeckLinkIPExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085EF2C0181892FF00D5805C /* AutomaticModeDetection */ = {
+			isa = PBXGroup;
+			children = (
+				085EF2D9181899BB00D5805C /* AutomaticModeDetection.cpp */,
+			);
+			name = AutomaticModeDetection;
+			sourceTree = "<group>";
+		};
+		085EF2C41818940A00D5805C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				085EF2D6181894CD00D5805C /* DeckLinkAPI.h */,
+				08AFDC09181E06F700C86C10 /* platform.cpp */,
+				08AFDC08181E019600C86C10 /* platform.h */,
+				085EF2D7181894CD00D5805C /* DeckLinkAPIDispatch.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		08A4810A185059A400C11683 /* DeviceNotification */ = {
+			isa = PBXGroup;
+			children = (
+				08A4F41D185028F500462953 /* DeviceNotification.cpp */,
+			);
+			path = DeviceNotification;
+			sourceTree = "<group>";
+		};
+		16FE1C67227AAE7C00282213 /* VancCapture */ = {
+			isa = PBXGroup;
+			children = (
+				16FE1C68227AAE9000282213 /* VancCapture.cpp */,
+			);
+			name = VancCapture;
+			sourceTree = "<group>";
+		};
+		A82F1FEF19AC704D006B6B3D /* RP188VitcOutput */ = {
+			isa = PBXGroup;
+			children = (
+				A82F200219AC70AB006B6B3D /* RP188VitcOutput.cpp */,
+			);
+			path = RP188VitcOutput;
+			sourceTree = "<group>";
+		};
+		A837E7B52186B9DF00C083AF /* SynchronizedCapture */ = {
+			isa = PBXGroup;
+			children = (
+				A837E7BB2186BA3200C083AF /* SynchronizedCapture.cpp */,
+			);
+			path = SynchronizedCapture;
+			sourceTree = "<group>";
+		};
+		A882B3242154AFBD0058E063 /* SynchronizedPlayback */ = {
+			isa = PBXGroup;
+			children = (
+				A882B31D2154AFA40058E063 /* SynchronizedPlayback.cpp */,
+			);
+			path = SynchronizedPlayback;
+			sourceTree = "<group>";
+		};
+		A8F503E91C0D11C900212771 /* StatusMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A8F503E71C0D11C200212771 /* StatusMonitor.cpp */,
+			);
+			name = StatusMonitor;
+			sourceTree = "<group>";
+		};
+		DEAE2E491958EC2700DE9F48 /* VancOutput */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE2E541959557C00DE9F48 /* VancOutput.cpp */,
+			);
+			path = VancOutput;
+			sourceTree = "<group>";
+		};
+		DEB1D2BA1958038E00A19F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085EF2D31818946000D5805C /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3B322512BC7C9D40040C6AD /* DeckLinkIPExample */ = {
+			isa = PBXGroup;
+			children = (
+				E3C420C82BC8C7AA00885A09 /* DeckLinkIPExample.cpp */,
+			);
+			path = DeckLinkIPExample;
+			sourceTree = "<group>";
+		};
+		E3B322572BC7CA350040C6AD /* DeckLinkIPExample */ = {
+			isa = PBXGroup;
+			children = (
+				E3B322582BC7CA350040C6AD /* main.cpp */,
+			);
+			path = DeckLinkIPExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085EF2C81818942B00D5805C /* AutomaticModeDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085EF2CF1818942B00D5805C /* Build configuration list for PBXNativeTarget "AutomaticModeDetection" */;
+			buildPhases = (
+				085EF2C51818942B00D5805C /* Sources */,
+				085EF2C61818942B00D5805C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutomaticModeDetection;
+			productName = AutomaticModeDetection;
+			productReference = 085EF2C91818942B00D5805C /* AutomaticModeDetection */;
+			productType = "com.apple.product-type.tool";
+		};
+		08A48108185059A400C11683 /* DeviceNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A48111185059A500C11683 /* Build configuration list for PBXNativeTarget "DeviceNotification" */;
+			buildPhases = (
+				08A48105185059A400C11683 /* Sources */,
+				08A48106185059A400C11683 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceNotification;
+			productName = DeviceNotification;
+			productReference = 08A48109185059A400C11683 /* DeviceNotification */;
+			productType = "com.apple.product-type.tool";
+		};
+		16FE1C6D227AAF0200282213 /* VancCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FE1C72227AAF0200282213 /* Build configuration list for PBXNativeTarget "VancCapture" */;
+			buildPhases = (
+				16FE1C6A227AAF0200282213 /* Sources */,
+				16FE1C6B227AAF0200282213 /* Frameworks */,
+				16FE1C6C227AAF0200282213 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VancCapture;
+			productName = VancCapture;
+			productReference = 16FE1C6E227AAF0200282213 /* VancCapture */;
+			productType = "com.apple.product-type.tool";
+		};
+		A82F1FF719AC706B006B6B3D /* RP188VitcOutput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A82F1FFE19AC706B006B6B3D /* Build configuration list for PBXNativeTarget "RP188VitcOutput" */;
+			buildPhases = (
+				A82F1FF819AC706B006B6B3D /* Sources */,
+				A82F1FFC19AC706B006B6B3D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RP188VitcOutput;
+			productName = VancOutput;
+			productReference = A82F200119AC706B006B6B3D /* RP188VitcOutput */;
+			productType = "com.apple.product-type.tool";
+		};
+		A837E7B32186B9DF00C083AF /* SynchronizedCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A837E7BA2186B9DF00C083AF /* Build configuration list for PBXNativeTarget "SynchronizedCapture" */;
+			buildPhases = (
+				A837E7B02186B9DF00C083AF /* Sources */,
+				A837E7B12186B9DF00C083AF /* Frameworks */,
+				A837E7B22186B9DF00C083AF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynchronizedCapture;
+			productName = SynchronizedCapture;
+			productReference = A837E7B42186B9DF00C083AF /* SynchronizedCapture */;
+			productType = "com.apple.product-type.tool";
+		};
+		A882B3222154AFBD0058E063 /* SynchronizedPlayback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A882B3272154AFBD0058E063 /* Build configuration list for PBXNativeTarget "SynchronizedPlayback" */;
+			buildPhases = (
+				A882B31F2154AFBD0058E063 /* Sources */,
+				A882B3202154AFBD0058E063 /* Frameworks */,
+				A882B3212154AFBD0058E063 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynchronizedPlayback;
+			productName = SynchronizedPlayback;
+			productReference = A882B3232154AFBD0058E063 /* SynchronizedPlayback */;
+			productType = "com.apple.product-type.tool";
+		};
+		A8F503DC1C0D119500212771 /* StatusMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F503E31C0D119500212771 /* Build configuration list for PBXNativeTarget "StatusMonitor" */;
+			buildPhases = (
+				A8F503DD1C0D119500212771 /* Sources */,
+				A8F503E11C0D119500212771 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatusMonitor;
+			productName = VancOutput;
+			productReference = A8F503E61C0D119500212771 /* StatusMonitor */;
+			productType = "com.apple.product-type.tool";
+		};
+		DEAE2E471958EC2700DE9F48 /* VancOutput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAE2E4E1958EC2700DE9F48 /* Build configuration list for PBXNativeTarget "VancOutput" */;
+			buildPhases = (
+				DEAE2E441958EC2700DE9F48 /* Sources */,
+				DEAE2E451958EC2700DE9F48 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VancOutput;
+			productName = VancOutput;
+			productReference = DEAE2E481958EC2700DE9F48 /* VancOutput */;
+			productType = "com.apple.product-type.tool";
+		};
+		E3B322552BC7CA350040C6AD /* DeckLinkIPExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3B3225A2BC7CA350040C6AD /* Build configuration list for PBXNativeTarget "DeckLinkIPExample" */;
+			buildPhases = (
+				E3B322522BC7CA350040C6AD /* Sources */,
+				E3B322532BC7CA350040C6AD /* Frameworks */,
+				E3B322542BC7CA350040C6AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeckLinkIPExample;
+			productName = DeckLinkIPExample;
+			productReference = E3B322562BC7CA350040C6AD /* DeckLinkIPExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		083BE8A2181892BD0067DA94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Blackmagic Design";
+				TargetAttributes = {
+					16FE1C6D227AAF0200282213 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A837E7B32186B9DF00C083AF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A882B3222154AFBD0058E063 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					E3B322552BC7CA350040C6AD = {
+						CreatedOnToolsVersion = 14.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 083BE8A5181892BD0067DA94 /* Build configuration list for PBXProject "Examples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 083BE8A1181892BD0067DA94;
+			productRefGroup = 083BE8AB181892BD0067DA94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				085EF2C81818942B00D5805C /* AutomaticModeDetection */,
+				08A48108185059A400C11683 /* DeviceNotification */,
+				DEAE2E471958EC2700DE9F48 /* VancOutput */,
+				A82F1FF719AC706B006B6B3D /* RP188VitcOutput */,
+				A8F503DC1C0D119500212771 /* StatusMonitor */,
+				A882B3222154AFBD0058E063 /* SynchronizedPlayback */,
+				A837E7B32186B9DF00C083AF /* SynchronizedCapture */,
+				16FE1C6D227AAF0200282213 /* VancCapture */,
+				E3B322552BC7CA350040C6AD /* DeckLinkIPExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085EF2C51818942B00D5805C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085EF2D81818956B00D5805C /* DeckLinkAPIDispatch.cpp in Sources */,
+				085EF2DA181899BB00D5805C /* AutomaticModeDetection.cpp in Sources */,
+				08AFDC0A181E06F700C86C10 /* platform.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A48105185059A400C11683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A481121850640E00C11683 /* DeviceNotification.cpp in Sources */,
+				08A4811318506BB800C11683 /* platform.cpp in Sources */,
+				08A4811518517D2700C11683 /* DeckLinkAPIDispatch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FE1C6A227AAF0200282213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FE1C77227AAF5400282213 /* DeckLinkAPIDispatch.cpp in Sources */,
+				16FE1C76227AAF4900282213 /* platform.cpp in Sources */,
+				16FE1C75227AAF3F00282213 /* VancCapture.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A82F1FF819AC706B006B6B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A82F1FFA19AC706B006B6B3D /* platform.cpp in Sources */,
+				A82F200319AC70AB006B6B3D /* RP188VitcOutput.cpp in Sources */,
+				A82F1FFB19AC706B006B6B3D /* DeckLinkAPIDispatch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A837E7B02186B9DF00C083AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A837E7BD2186CD3400C083AF /* platform.cpp in Sources */,
+				A837E7BE2186CD3900C083AF /* DeckLinkAPIDispatch.cpp in Sources */,
+				A837E7BC2186BA3200C083AF /* SynchronizedCapture.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A882B31F2154AFBD0058E063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8385BCB21630354005E0A98 /* platform.cpp in Sources */,
+				A8385BCC2163035A005E0A98 /* DeckLinkAPIDispatch.cpp in Sources */,
+				A8385BCA21630318005E0A98 /* SynchronizedPlayback.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F503DD1C0D119500212771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F503DF1C0D119500212771 /* platform.cpp in Sources */,
+				A8F503E81C0D11C200212771 /* StatusMonitor.cpp in Sources */,
+				A8F503E01C0D119500212771 /* DeckLinkAPIDispatch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAE2E441958EC2700DE9F48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE75DF80195CFE0E0016F2B3 /* platform.cpp in Sources */,
+				A8F503EA1C0D138000212771 /* VancOutput.cpp in Sources */,
+				DE75DF81195CFE0E0016F2B3 /* DeckLinkAPIDispatch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B322522BC7CA350040C6AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B322602BC7CEA00040C6AD /* DeckLinkAPIDispatch.cpp in Sources */,
+				E3C420C92BC8C7AA00885A09 /* DeckLinkIPExample.cpp in Sources */,
+				E3B3225F2BC7CE990040C6AD /* platform.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		083BE8B1181892BD0067DA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		083BE8B2181892BD0067DA94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		085EF2D01818942B00D5805C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		085EF2D11818942B00D5805C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08A4810F185059A500C11683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08A48110185059A500C11683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16FE1C73227AAF0200282213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16FE1C74227AAF0200282213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A82F1FFF19AC706B006B6B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = RP188VitcOutput;
+			};
+			name = Debug;
+		};
+		A82F200019AC706B006B6B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = RP188VitcOutput;
+			};
+			name = Release;
+		};
+		A837E7B82186B9DF00C083AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A837E7B92186B9DF00C083AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A882B3282154AFBD0058E063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A882B3292154AFBD0058E063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A8F503E41C0D119500212771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A8F503E51C0D119500212771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEAE2E4F1958EC2700DE9F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEAE2E501958EC2700DE9F48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				OTHER_CODE_SIGN_FLAGS = "-i com.blackmagic-design.desktopvideo.sdk.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E3B3225B2BC7CA350040C6AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E3B3225C2BC7CA350040C6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		083BE8A5181892BD0067DA94 /* Build configuration list for PBXProject "Examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083BE8B1181892BD0067DA94 /* Debug */,
+				083BE8B2181892BD0067DA94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085EF2CF1818942B00D5805C /* Build configuration list for PBXNativeTarget "AutomaticModeDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085EF2D01818942B00D5805C /* Debug */,
+				085EF2D11818942B00D5805C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A48111185059A500C11683 /* Build configuration list for PBXNativeTarget "DeviceNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A4810F185059A500C11683 /* Debug */,
+				08A48110185059A500C11683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FE1C72227AAF0200282213 /* Build configuration list for PBXNativeTarget "VancCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FE1C73227AAF0200282213 /* Debug */,
+				16FE1C74227AAF0200282213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A82F1FFE19AC706B006B6B3D /* Build configuration list for PBXNativeTarget "RP188VitcOutput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A82F1FFF19AC706B006B6B3D /* Debug */,
+				A82F200019AC706B006B6B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A837E7BA2186B9DF00C083AF /* Build configuration list for PBXNativeTarget "SynchronizedCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A837E7B82186B9DF00C083AF /* Debug */,
+				A837E7B92186B9DF00C083AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A882B3272154AFBD0058E063 /* Build configuration list for PBXNativeTarget "SynchronizedPlayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A882B3282154AFBD0058E063 /* Debug */,
+				A882B3292154AFBD0058E063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F503E31C0D119500212771 /* Build configuration list for PBXNativeTarget "StatusMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F503E41C0D119500212771 /* Debug */,
+				A8F503E51C0D119500212771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAE2E4E1958EC2700DE9F48 /* Build configuration list for PBXNativeTarget "VancOutput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAE2E4F1958EC2700DE9F48 /* Debug */,
+				DEAE2E501958EC2700DE9F48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3B3225A2BC7CA350040C6AD /* Build configuration list for PBXNativeTarget "DeckLinkIPExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3B3225B2BC7CA350040C6AD /* Debug */,
+				E3B3225C2BC7CA350040C6AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 083BE8A2181892BD0067DA94 /* Project object */;
+}
