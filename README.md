@@ -40,4 +40,4 @@ If, after running sudo apt install libegl1-mesa, errors still appear, try instal
 sudo apt --fix-broken install
 
 Here is a forum thread on the same tutorial:
-[Das Werkstatt Forum – DeckLink SDK Installation](http://www.das-werkstatt.com/forum/werkstatt/viewtopic.php?t=2656)
+[Das Werkstatt Forum ï¿½ DeckLink SDK Installation](http://www.das-werkstatt.com/forum/werkstatt/viewtopic.php?t=2656)
