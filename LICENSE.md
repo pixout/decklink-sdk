@@ -1,5 +1,5 @@
 All content with this repository is licensed under the same terms as the decklinksdk code included, which is:
-
+```
 /* -LICENSE-START-
 
  ** Copyright (c) 2025 Blackmagic Design
@@ -41,5 +41,5 @@ All content with this repository is licensed under the same terms as the decklin
  ** -LICENSE-END-
 
  */
-
+```
 For the complete license text, see the bundled [End User License Agreement](Docs/End%20User%20License%20Agreement.pdf).
