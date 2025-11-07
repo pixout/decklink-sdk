@@ -2,33 +2,28 @@ cmake_minimum_required(VERSION 3.18)
 project(BlackMagicDeckLinkSDK LANGUAGES CXX)
 
 if(APPLE)
-    set(TARGET_OS "macOS")
-elseif(UNIX)
+    set(TARGET_OS "Mac")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     set(TARGET_OS "Linux")
 else()
-    set(TARGET_OS ${CMAKE_SYSTEM_NAME})
+    message(FATAL_ERROR "Unsupported platform: ${CMAKE_SYSTEM_NAME}. CMake does not support this platform.")
 endif()
 
 message("Black Magic DeckLink using SDK for Host system: ${TARGET_OS}")
 
-if(APPLE)
-    #TBD
-elseif(WIN32)
-    #TBD
-elseif(UNIX AND NOT APPLE)
+set(SOURCES
+    ${TARGET_OS}/include/DeckLinkAPI.h
+    ${TARGET_OS}/include/DeckLinkAPIConfiguration.h
+    ${TARGET_OS}/include/DeckLinkAPIDeckControl.h
+    ${TARGET_OS}/include/DeckLinkAPIDiscovery.h
+    ${TARGET_OS}/include/DeckLinkAPIDispatch.cpp
+    ${TARGET_OS}/include/DeckLinkAPIModes.h
+    ${TARGET_OS}/include/DeckLinkAPITypes.h
+    ${TARGET_OS}/include/DeckLinkAPIVersion.h
+)
 
-    set(SOURCES
-        ${TARGET_OS}/include/DeckLinkAPI.h
-        ${TARGET_OS}/include/DeckLinkAPIConfiguration.h
-        ${TARGET_OS}/include/DeckLinkAPIDeckControl.h
-        ${TARGET_OS}/include/DeckLinkAPIDiscovery.h
-        ${TARGET_OS}/include/DeckLinkAPIDispatch.cpp
-        ${TARGET_OS}/include/DeckLinkAPIModes.h
-        ${TARGET_OS}/include/DeckLinkAPITypes.h
-        ${TARGET_OS}/include/DeckLinkAPIVersion.h
-        ${TARGET_OS}/include/LinuxCOM.h
-    )
-
+if(TARGET_OS STREQUAL "Linux")
+    list(APPEND SOURCES ${TARGET_OS}/include/LinuxCOM.h)
 endif()
 
 add_library(${PROJECT_NAME} INTERFACE)
