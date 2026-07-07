@@ -42,7 +42,7 @@
 #include <pthread.h>
 #include <dlfcn.h>
 
-#include "DeckLinkAPI.h"
+#include "DeckLinkAPI_v15_3_1.h"
 
 #define kDeckLinkAPI_Name "libDeckLinkAPI.so"
 #define KDeckLinkPreviewAPI_Name "libDeckLinkPreviewAPI.so"
@@ -51,7 +51,7 @@ typedef IDeckLinkIterator* (*CreateIteratorFunc)(void);
 typedef IDeckLinkAPIInformation* (*CreateAPIInformationFunc)(void);
 typedef IDeckLinkGLScreenPreviewHelper* (*CreateOpenGLScreenPreviewHelperFunc)(void);
 typedef IDeckLinkGLScreenPreviewHelper* (*CreateOpenGL3ScreenPreviewHelperFunc)(void);
-typedef IDeckLinkVideoConversion* (*CreateVideoConversionInstanceFunc)(void);
+typedef IDeckLinkVideoConversion_v15_3_1* (*CreateVideoConversionInstanceFunc)(void);
 typedef IDeckLinkDiscovery* (*CreateDeckLinkDiscoveryInstanceFunc)(void);
 typedef IDeckLinkVideoFrameAncillaryPackets* (*CreateVideoFrameAncillaryPacketsInstanceFunc)(void);
 
@@ -87,13 +87,13 @@ static void	InitDeckLinkAPI (void)
 	gCreateAPIInformationFunc = (CreateAPIInformationFunc)dlsym(libraryHandle, "CreateDeckLinkAPIInformationInstance_0001");
 	if (!gCreateAPIInformationFunc)
 		fprintf(stderr, "%s\n", dlerror());
-	gCreateVideoConversionFunc = (CreateVideoConversionInstanceFunc)dlsym(libraryHandle, "CreateVideoConversionInstance_0003");
+	gCreateVideoConversionFunc = (CreateVideoConversionInstanceFunc)dlsym(libraryHandle, "CreateVideoConversionInstance_0002");
 	if (!gCreateVideoConversionFunc)
 		fprintf(stderr, "%s\n", dlerror());
 	gCreateDeckLinkDiscoveryFunc = (CreateDeckLinkDiscoveryInstanceFunc)dlsym(libraryHandle, "CreateDeckLinkDiscoveryInstance_0003");
 	if (!gCreateDeckLinkDiscoveryFunc)
 		fprintf(stderr, "%s\n", dlerror());
-	gCreateVideoFrameAncillaryPacketsFunc = (CreateVideoFrameAncillaryPacketsInstanceFunc)dlsym(libraryHandle, "CreateVideoFrameAncillaryPacketsInstance_0002");
+	gCreateVideoFrameAncillaryPacketsFunc = (CreateVideoFrameAncillaryPacketsInstanceFunc)dlsym(libraryHandle, "CreateVideoFrameAncillaryPacketsInstance_0001");
 	if (!gCreateVideoFrameAncillaryPacketsFunc)
 		fprintf(stderr, "%s\n", dlerror());
 }
@@ -122,7 +122,7 @@ bool		IsDeckLinkAPIPresent (void)
 	return gLoadedDeckLinkAPI;
 }
 
-IDeckLinkIterator*		CreateDeckLinkIteratorInstance (void)
+IDeckLinkIterator*		CreateDeckLinkIteratorInstance_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	
@@ -131,7 +131,7 @@ IDeckLinkIterator*		CreateDeckLinkIteratorInstance (void)
 	return gCreateIteratorFunc();
 }
 
-IDeckLinkAPIInformation*	CreateDeckLinkAPIInformationInstance (void)
+IDeckLinkAPIInformation*	CreateDeckLinkAPIInformationInstance_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	
@@ -140,7 +140,7 @@ IDeckLinkAPIInformation*	CreateDeckLinkAPIInformationInstance (void)
 	return gCreateAPIInformationFunc();
 }
 
-IDeckLinkGLScreenPreviewHelper*		CreateOpenGLScreenPreviewHelper (void)
+IDeckLinkGLScreenPreviewHelper*		CreateOpenGLScreenPreviewHelper_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	pthread_once(&gPreviewOnceControl, InitDeckLinkPreviewAPI);
@@ -150,7 +150,7 @@ IDeckLinkGLScreenPreviewHelper*		CreateOpenGLScreenPreviewHelper (void)
 	return gCreateOpenGLPreviewFunc();
 }
 
-IDeckLinkGLScreenPreviewHelper*		CreateOpenGL3ScreenPreviewHelper (void)
+IDeckLinkGLScreenPreviewHelper*		CreateOpenGL3ScreenPreviewHelper_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	pthread_once(&gPreviewOnceControl, InitDeckLinkPreviewAPI);
@@ -160,7 +160,7 @@ IDeckLinkGLScreenPreviewHelper*		CreateOpenGL3ScreenPreviewHelper (void)
 	return gCreateOpenGL3PreviewFunc();
 }
 
-IDeckLinkVideoConversion* CreateVideoConversionInstance (void)
+IDeckLinkVideoConversion_v15_3_1* CreateVideoConversionInstance_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	
@@ -169,7 +169,7 @@ IDeckLinkVideoConversion* CreateVideoConversionInstance (void)
 	return gCreateVideoConversionFunc();
 }
 
-IDeckLinkDiscovery* CreateDeckLinkDiscoveryInstance (void)
+IDeckLinkDiscovery* CreateDeckLinkDiscoveryInstance_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	
@@ -178,7 +178,7 @@ IDeckLinkDiscovery* CreateDeckLinkDiscoveryInstance (void)
 	return gCreateDeckLinkDiscoveryFunc();
 }
 
-IDeckLinkVideoFrameAncillaryPackets* CreateVideoFrameAncillaryPacketsInstance (void)
+IDeckLinkVideoFrameAncillaryPackets* CreateVideoFrameAncillaryPacketsInstance_v15_3_1 (void)
 {
 	pthread_once(&gDeckLinkOnceControl, InitDeckLinkAPI);
 	
