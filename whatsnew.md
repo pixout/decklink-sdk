@@ -1,6 +1,189 @@
-# Blackmagic Design DeckLink SDK 15.2
+# Blackmagic Design DeckLink SDK 16.0
 
 Please refer to the Blackmagic Design DeckLink SDK documentation for a detailed explanation of the available functionality.
+
+---
+
+## Changes in Blackmagic DeckLink SDK 16.0
+
+### New Interfaces
+
+#### IDeckLinkStatistics
+- Interface allowing query of statistics associated with the DeckLink device.
+
+### Updated Interfaces
+
+#### IDeckLinkVideoBuffer
+- **Added:** `GetSize`
+  - Provides the size of the buffer.
+
+#### IDeckLinkStatus
+- **Added:** `GetInterface`
+  - Provides status as an interface.
+  - The following status items can return either `BMDDisplayMode` as an integer or `IDeckLinkDisplayMode` as an interface:
+    - `bmdDeckLinkStatusDetectedVideoInputMode`
+    - `bmdDeckLinkStatusCurrentVideoInputMode`
+    - `bmdDeckLinkStatusCurrentVideoOutputMode`
+    - `bmdDeckLinkStatusHDMIOutputActualMode`
+- **Added:** `GetFlagWithParam`
+- **Added:** `GetIntWithParam`
+- **Added:** `GetFloatWithParam`
+- **Added:** `GetStringWithParam`
+- **Added:** `GetBytesWithParam`
+  - Provides parameterizable status values.
+
+#### IDeckLinkConfiguration
+- **Added:** `SetFlagWithParam`
+- **Added:** `GetFlagWithParam`
+- **Added:** `SetIntWithParam`
+- **Added:** `GetIntWithParam`
+- **Added:** `SetFloatWithParam`
+- **Added:** `GetFloatWithParam`
+- **Added:** `SetStringWithParam`
+- **Added:** `GetStringWithParam`
+  - Provides parameterizable configuration values.
+
+#### IDeckLinkProfileAttributes
+- **Added:** `GetStringWithParam`
+  - Provides a parameterizable attribute string.
+
+#### IDeckLinkOutput
+- **Deprecated:** `CreateAncillaryData`
+  - Use `IDeckLinkVideoFrameAncillaryPackets` instead.
+
+#### IDeckLinkVideoFrame
+- **Deprecated:** `GetAncillaryData`
+  - Use `IDeckLinkVideoFrameAncillaryPackets` instead.
+
+#### IDeckLinkMutableVideoFrame
+- **Deprecated:** `SetAncillaryData`
+  - Use `IDeckLinkVideoFrameAncillaryPackets` instead.
+
+### New Types
+
+#### BMDEthernetNMOSRegistryState
+- Enumerates the NMOS registry connection state.
+
+#### BMDDeckLinkStatisticID
+- Enumerates the set of statistics which may be queried using `IDeckLinkStatistics`.
+
+### Updated Types
+
+#### BMDDeckLinkFrameMetadataID
+- **Added:** `bmdDeckLinkFrameMetadataRTPTimestamp`
+  - Integer to obtain the RTP timestamp for the captured frame.
+
+#### BMDSupportedVideoModeFlags
+- **Added:** `bmdSupportedVideoModeEthernetIP10`
+  - Used to check whether the video mode is supported with the IP10 codec.
+
+#### BMDDeckLinkConfigurationID
+- **Added:** `bmdDeckLinkConfigEthernetVideoOutputIP10`
+  - Flag to output compressed video with IP10 codec or uncompressed, for video modes that support IP10.
+- **Added:** `bmdDeckLinkConfigEthernetUseManualNMOSRegistry`
+  - Flag to enable manual setting of NMOS registry address, otherwise the NMOS registry will be found via mDNS discovery.
+- **Added:** `bmdDeckLinkConfigEthernetNMOSRegistryAddress`
+  - String to set the manual NMOS registry address when enabled.
+- **Added:** `bmdDeckLinkConfigParamEthernetUseDHCP`
+- **Added:** `bmdDeckLinkConfigParamEthernetStaticLocalIPAddress`
+- **Added:** `bmdDeckLinkConfigParamEthernetStaticSubnetMask`
+- **Added:** `bmdDeckLinkConfigParamEthernetStaticGatewayIPAddress`
+- **Added:** `bmdDeckLinkConfigParamEthernetStaticPrimaryDNS`
+- **Added:** `bmdDeckLinkConfigParamEthernetStaticSecondaryDNS`
+- **Added:** `bmdDeckLinkConfigParamEthernetVideoOutputAddress`
+- **Added:** `bmdDeckLinkConfigParamEthernetAudioOutputAddress`
+- **Added:** `bmdDeckLinkConfigParamEthernetAncillaryOutputAddress`
+  - Network configuration items for a specific Ethernet interface.
+- **Removed:** `bmdDeckLinkConfigEthernetUseDHCP`
+- **Removed:** `bmdDeckLinkConfigEthernetStaticLocalIPAddress`
+- **Removed:** `bmdDeckLinkConfigEthernetStaticSubnetMask`
+- **Removed:** `bmdDeckLinkConfigEthernetStaticGatewayIPAddress`
+- **Removed:** `bmdDeckLinkConfigEthernetStaticPrimaryDNS`
+- **Removed:** `bmdDeckLinkConfigEthernetStaticSecondaryDNS`
+- **Removed:** `bmdDeckLinkConfigEthernetVideoOutputAddress`
+- **Removed:** `bmdDeckLinkConfigEthernetAudioOutputAddress`
+- **Removed:** `bmdDeckLinkConfigEthernetAncillaryOutputAddress`
+  - Use the configuration items for the specific Ethernet interface instead.
+
+#### BMDDeckLinkAttributeID
+- **Added:** `BMDDeckLinkNumberOfEthernetConnectors`
+  - Integer to specify the number of Ethernet connectors for the device.
+- **Added:** `BMDDeckLinkParamEthernetMACAddress`
+  - Local MAC address string for the specific Ethernet interface.
+- **Removed:** `BMDDeckLinkEthernetMACAddress`
+  - Use the attribute item for the specific Ethernet interface instead.
+
+#### BMDDeckLinkStatusID
+- **Added:** `bmdDeckLinkStatusEthernetManualNMOSRegistry`
+  - Current manual NMOS registry state.
+- **Added:** `bmdDeckLinkStatusEthernetCurrentNMOSRegistry`
+  - Address of the current NMOS registry.
+- **Added:** `bmdDeckLinkStatusAncillaryInputSignalLocked`
+  - True if the ancillary input signal is locked.
+- **Added:** `bmdDeckLinkStatusParamEthernetSFPStaticInfo`
+  - The static information of the connected SFP module for the specific Ethernet interface.
+- **Added:** `bmdDeckLinkStatusParamEthernetLink`
+  - Current link state for the specific Ethernet interface.
+- **Added:** `bmdDeckLinkStatusParamEthernetLinkMbps`
+  - Current link speed for the specific Ethernet interface.
+- **Added:** `bmdDeckLinkStatusParamEthernetLocalIPAddress`
+- **Added:** `bmdDeckLinkStatusParamEthernetSubnetMask`
+- **Added:** `bmdDeckLinkStatusParamEthernetGatewayIPAddress`
+- **Added:** `bmdDeckLinkStatusParamEthernetPrimaryDNS`
+- **Added:** `bmdDeckLinkStatusParamEthernetSecondaryDNS`
+  - The current negotiated or static network addresses for the specific Ethernet interface.
+- **Added:** `bmdDeckLinkStatusParamEthernetVideoOutputAddress`
+- **Added:** `bmdDeckLinkStatusParamEthernetAudioOutputAddress`
+- **Added:** `bmdDeckLinkStatusParamEthernetAncillaryOutputAddress`
+  - The current multicast addresses for Video/Audio/Ancillary streams for the specific Ethernet interface.
+- **Removed:** `bmdDeckLinkStatusEthernetLink`
+- **Removed:** `bmdDeckLinkStatusEthernetLinkMbps`
+- **Removed:** `bmdDeckLinkStatusEthernetLocalIPAddress`
+- **Removed:** `bmdDeckLinkStatusEthernetSubnetMask`
+- **Removed:** `bmdDeckLinkStatusEthernetGatewayIPAddress`
+- **Removed:** `bmdDeckLinkStatusEthernetPrimaryDNS`
+- **Removed:** `bmdDeckLinkStatusEthernetSecondaryDNS`
+- **Removed:** `bmdDeckLinkStatusEthernetVideoOutputAddress`
+- **Removed:** `bmdDeckLinkStatusEthernetAudioOutputAddress`
+- **Removed:** `bmdDeckLinkStatusEthernetAncillaryOutputAddress`
+  - Use the status items for the specific Ethernet interface instead.
+
+### New Samples
+
+#### KeyerOutput
+- Cross platform sample to demonstrate keyer interface. Replaces Windows GdiKeyer and Mac DeckLinkKeyer samples.
+
+#### MultiPreview
+- Replaces QuadPreview, adding command-line argument to select preview grid size.
+
+### Updated Samples
+
+- Samples implementing the `IDeckLinkVideoBuffer` interface have been updated to add the `GetSize` method.
+
+#### DeviceConfigure
+- Add support for setting multicast output addresses.
+- Add support for setting Ethernet IP addresses with parameterizable interface number.
+
+#### DeviceList
+- Display Ethernet MAC addresses with parameterizable interface number.
+
+#### DeviceStatus
+- Add Ethernet status tab with selectable parameterizable interface number.
+
+#### InputLoopThrough
+- Add command-line arguments to select devices, bypass genlock reference and inject processing delay.
+
+### Updated Examples
+
+#### AncillaryCapture
+- Add command-line argument to select target device.
+
+#### AncillaryOutput
+- Add command-line argument to select target device.
+
+#### StatusMonitor
+- Add support to display Ethernet status items with parameterizable interface number.
+- Add support for Ethernet statistics with command-line argument to set poll rate.
 
 ---
 
